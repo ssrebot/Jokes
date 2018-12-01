@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Vicevi</title>
+</head>
+<body>
+
+    <table cellpadding="10" align="center" border="2px solid black">
+        <tr>
+            <th>#</th>
+            <th>Kategorija</th>
+            <th>Vic</th>
+            <th>Likes</th>
+            <th>Dislikes</th>
+            <th>Razlika</th>
+            <th></th>
+        </tr>
+
+        <tr th:each="joke, iteration : ${jokesPage.content}">
+            <td th:text="${iteration.count} + (${currentPage} - 1)*10">#</td>
+            <td th:text="${joke.category.name}">Kategorija</td>
+            <td th:text="${joke.content}">Vic</td>
+            <td th:text="${joke.likes}">Likes</td>
+            <td th:text="${joke.dislikes}">Dislikes</td>
+            <td th:text="${joke.likes} - ${joke.dislikes}"></td>
+            <td>
+                <form th:action="@{/} + ${joke.id}" th:method="put">
+                    <button type="submit" name="action" value="like">like</button>
+                    <button type="submit" name="action" value="dislike">dislike</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <div th:if="${jokesPage.totalPages > 0}" class="pagination"
+         th:each="pageNumber : ${pageNumbers}" align="center">
+        <a th:href="@{/(size=${jokesPage.size}, page=${pageNumber})}"
+           th:text=${pageNumber}
+           th:class="${pageNumber==jokesPage.number + 1} ? active"
+           style="display:block; padding:4px; float:left; position: relative; right: -50%;  text-align: left;"></a>
+    </div>
+</body>
+</html>

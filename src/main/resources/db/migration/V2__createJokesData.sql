@@ -1,0 +1,32 @@
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo1', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo2', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo3', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo4', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo5', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo6', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo7', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo8', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo9', (SELECT id from category where name = 'Mujo'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajMujo10', (SELECT id from category where name = 'Mujo'));
+
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck1', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck2', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck3', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck4', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck5', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck6', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck7', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck8', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck9', (SELECT id from category where name = 'Chuck Norris'));
+INSERT INTO joke(content, category_id) VALUES('sadrzajChuck10', (SELECT id from category where name = 'Chuck Norris'));
+
+INSERT INTO joke(content, category_id) VALUES('Crni1', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni2', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni3', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni4', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni5', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni6', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni7', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni8', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni9', (SELECT id from category where name = 'Crni'));
+INSERT INTO joke(content, category_id) VALUES('Crni10', (SELECT id from category where name = 'Crni'));
